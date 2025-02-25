@@ -126,8 +126,40 @@ For queries or contributions, reach out via [GitHub Issues](https://github.com/y
 
 
 
+#ONBOARDING SCREEN
 
 ![onboarding](https://github.com/user-attachments/assets/318c995b-ed3f-4554-a52f-e2d6e112770c)
+
+![onbording 2](https://github.com/user-attachments/assets/7fc9a11f-6b46-4d18-b8f0-a9ea4458ee49)
+
+#LOGIN SCREEN
+
+![login](https://github.com/user-attachments/assets/03f8a764-e815-4436-8702-2c868095644e)
+
+#DASHBOARD SCREEN
+
+![dashboard 3](https://github.com/user-attachments/assets/cd14977c-f39a-420b-8a2a-86617397147b)
+
+#PROFILE
+
+![profile](https://github.com/user-attachments/assets/37fdb2de-42fa-4916-bfee-7b51e93f6f05)
+
+#DAILY REPORTING SCREEN
+
+![dail reporting 4](https://github.com/user-attachments/assets/50000bd8-39e5-4cf7-ab31-dc3583570e96)
+
+#LEAVE SCREEN
+
+![leaving 5](https://github.com/user-attachments/assets/be419171-3e7e-42df-859d-b80f44849c78)
+
+![leave  2](https://github.com/user-attachments/assets/717c23b6-4973-471f-a6e9-927c7b8467a8)
+
+#PROJECT SCREEN
+
+![project screen 6](https://github.com/user-attachments/assets/c56eb634-bcd4-46d8-8abb-60d64378278d)
+
+
+
 
 
 🌟 Support the Project
