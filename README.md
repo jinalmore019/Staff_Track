@@ -124,6 +124,7 @@ This project is open-source and available under the MIT License.
 ## 📬 Contact
 For queries or contributions, reach out via [GitHub Issues](https://github.com/your-repo-url/issues).
 
+## 🎥 Project Demo & Screenshots
 
 
 #ONBOARDING SCREEN
