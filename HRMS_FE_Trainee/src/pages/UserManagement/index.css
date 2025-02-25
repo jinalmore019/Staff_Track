@@ -1,0 +1,31 @@
+.roundIcon {
+  width: 50px;
+  background-color: white;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.modal-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.modal-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: #422b72;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

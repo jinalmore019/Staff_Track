@@ -1,0 +1,523 @@
+/* Line styles */
+.decision-tree-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.user-details {
+  /* height: 218px; */
+  width: 147px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px
+}
+.last-user-details {
+  /* height: 200px; */
+  width: 300px;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px
+}
+.last-user-details .user-details-name{
+  align-items: baseline !important;
+}
+.user-details-image {
+  height: 120px;
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #2a90f0  ;
+  border-radius: 100px;
+}
+.user-details-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.decision-tree-node.ltr,
+.decision-tree-node.rtl {
+  .decision-tree-node-line {
+    top: 0;
+    bottom: 0;
+
+    &::before,
+    &::after {
+      left: 0;
+      height: 50%;
+      right: 0;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  .decision-tree-node-content {
+    .decision-tree-node-sub-line {
+      top: 0;
+      bottom: 0;
+
+      &::after {
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 1px; /* $border-width variable used */
+        border-width: 0 0 1px 0;
+      border-color: #344767;
+
+      }
+    }
+  }
+
+  &:first-of-type > .decision-tree-node-line {
+    &::after {
+      bottom: -1px; /* $border-width variable used */
+    }
+  }
+
+  &.alone:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-width: 0 0 1px 0; /* $border-width variable used */
+      border-color: #344767;
+
+    }
+  }
+}
+
+.decision-tree-node.ttb,
+.decision-tree-node.btt {
+  .decision-tree-node-children {
+    display: flex;
+  }
+
+  .decision-tree-node-line {
+    left: 0;
+    right: 0;
+
+    &::before,
+    &::after {
+      top: 0;
+      width: 50%;
+      bottom: 0;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .decision-tree-node-content {
+    .decision-tree-node-sub-line {
+      left: 0;
+      right: 0;
+
+      &::after {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px; /* $border-width variable used */
+        border-width: 0 1px 0 0;
+      border-color: #344767;
+
+      }
+    }
+  }
+
+  &:first-of-type > .decision-tree-node-line {
+    &::after {
+      right: -1px; /* $border-width variable used */
+    }
+  }
+
+  &.alone:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-width: 0 1px 0 0; /* $border-width variable used */
+      border-color: #344767;
+
+    }
+  }
+}
+
+.decision-tree-node.ltr {
+  flex-flow: row nowrap;
+
+  .decision-tree-node-line {
+    left: -70px;
+
+    &::before {
+      border-width: 0 0 1px 1px; /* $border-width variable used */
+      border-color: #344767;
+
+    }
+
+    &::after {
+      border-width: 0 0 0 1px; /* $border-width variable used */
+      border-color: #344767;
+
+    }
+  }
+
+  .decision-tree-node-content {
+    .decision-tree-node-sub-line {
+      right: -50px;
+    }
+  }
+
+  &:first-of-type > .decision-tree-node-line {
+    &::after {
+      border-width: 1px 0 0 1px; /* $border-width variable used */
+      border-color: #344767;
+      border-top-left-radius: 3px; /* $border-radius variable used */
+    }
+  }
+
+  &:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-width: 0 0 1px 1px; /* $border-width variable used */
+      border-color: #344767;
+      border-bottom-left-radius: 3px; /* $border-radius variable used */
+    }
+  }
+
+  &.alone:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.decision-tree-node.rtl {
+  flex-flow: row-reverse nowrap;
+
+  .decision-tree-node-line {
+    right: 0;
+
+    &::before {
+      border-width: 0 1px 1px 0; /* $border-width variable used */
+      border-color: #344767;
+    }
+
+    &::after {
+      border-width: 0 1px 0 0; /* $border-width variable used */
+      border-color: #344767;
+    }
+  }
+
+  .decision-tree-node-content {
+    .decision-tree-node-sub-line {
+      left: 0;
+    }
+  }
+
+  &:first-of-type > .decision-tree-node-line {
+    &::after {
+      border-width: 1px 1px 0 0; /* $border-width variable used */
+      border-color: #344767;
+      border-top-right-radius: 3px; /* $border-radius variable used */
+    }
+  }
+
+  &:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-width: 0 1px 1px 0; /* $border-width variable used */
+      border-color: #344767;
+      border-bottom-right-radius: 3px; /* $border-radius variable used */
+    }
+  }
+
+  &.alone:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &.root {
+    justify-content: flex-end;
+  }
+}
+
+.decision-tree-node.ttb {
+  flex-flow: column nowrap;
+
+  .decision-tree-node-line {
+    top: 0;
+
+    &::before {
+      border-width: 1px 1px 0 0; /* $border-width variable used */
+      border-color: #344767;
+    }
+
+    &::after {
+      border-width: 1px 0 0 0; /* $border-width variable used */
+      border-color: #344767;
+    }
+  }
+
+  .decision-tree-node-content {
+    .decision-tree-node-sub-line {
+      bottom: 0;
+    }
+  }
+
+  &:first-of-type > .decision-tree-node-line {
+    &::after {
+      border-width: 1px 0 0 1px; /* $border-width variable used */
+      border-top-left-radius: 3px; /* $border-radius variable used */
+      border-color: #344767;
+    }
+  }
+
+  &:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-width: 1px 1px 0 0; /* $border-width variable used */
+      border-top-right-radius: 3px; /* $border-radius variable used */
+      border-color: #344767;
+    }
+  }
+
+  &.alone:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+.decision-tree-node.btt {
+  flex-flow: column-reverse nowrap;
+
+  .decision-tree-node-line {
+    bottom: 0;
+
+    &::before {
+      border-width: 0 1px 1px 0; /* $border-width variable used */
+      border-color: #344767;
+    }
+
+    &::after {
+      border-width: 0 0 1px 0; /* $border-width variable used */
+      border-color: #344767;
+    }
+  }
+
+  .decision-tree-node-content {
+    .decision-tree-node-sub-line {
+      top: 0;
+    }
+  }
+
+  &:first-of-type > .decision-tree-node-line {
+    &::after {
+      border-width: 0 0 1px 1px; /* $border-width variable used */
+      border-bottom-left-radius: 3px; /* $border-radius variable used */
+      border-color: #344767;
+    }
+  }
+
+  &:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-width: 0 1px 1px 0; /* $border-width variable used */
+      border-bottom-right-radius: 3px; /* $border-radius variable used */
+      border-color: #344767;
+    }
+  }
+
+  &.alone:last-of-type > .decision-tree-node-line {
+    &::before {
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.decision-tree-node-line {
+  position: absolute;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-style: solid; /* $border-style variable used */
+  }
+}
+
+.decision-tree-node-content {
+  position: relative;
+  color: #000;
+
+  .decision-tree-node-sub-line {
+    position: absolute;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      border-style: solid; /* $border-style variable used */
+    }
+  }
+}
+
+.decision-tree-node:first-of-type > .decision-tree-node-line {
+  &::before {
+    border-width: 0 0 0 0;
+  }
+}
+
+.decision-tree-node:last-of-type > .decision-tree-node-line {
+  &::after {
+    border-width: 0 0 0 0;
+  }
+}
+
+.decision-tree-node.alone:last-of-type > .decision-tree-node-line {
+  &::before {
+    border-width: 0 0 1px 0; /* $border-width variable used */
+    border-color: #344767;
+  }
+
+  &::after {
+    border-width: 0 0 0 0;
+  }
+}
+
+.decision-tree-node.leaf
+  > .decision-tree-node-content
+  .decision-tree-node-sub-line::after {
+  display: none;
+}
+
+.decision-tree-node.root > .decision-tree-node-line::before,
+.decision-tree-node.root > .decision-tree-node-line::after {
+  display: none;
+}
+
+.table-direction-english {
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.table-direction-arabic {
+  margin-right: -10px;
+  margin-left: 10px;
+}
+.text-success:not(.highlight-player) {
+  color: #013451 !important;
+}
+.highlight-player {
+  color: #bcc552 !important;
+}
+.champion {
+  border-radius: 10px;
+  transform: rotate(90deg);
+  background: #bdc751;
+  width: 150px;
+  text-align: center;
+  position: absolute;
+  right: -20px;
+  top: 45%;
+  /* color: black; */
+  padding: 5px !important;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.player-box .card-body {
+  border: solid 1px #212a7d;
+  font-size: 18px;
+  border-radius: 100px;
+}
+.vue-decision-tree-node .vue-decision-tree-node-line {
+  z-index: 9 !important;
+}
+.vue-decision-tree-node
+  .vue-decision-tree-node-content
+  .vue-decision-tree-node-sub-line {
+  z-index: 9 !important;
+}
+.text-white {
+  color: white;
+}
+body {
+  background-color: #093b56;
+  color: white;
+  font-family: sans-serif;
+  margin: 0px;
+}
+/* .card {
+  /* background-color: #005e92 !important; 
+} */
+.cursor-pointer {
+  cursor: pointer;
+}
+h2 {
+  font-size: 12px;
+}
+h4 {
+  font-size: 10px;
+  margin: 0;
+}
+.player-box {
+  text-align: center;
+  width: 140px;
+}
+.text-center {
+  text-align: center;
+}
+h1 {
+  font-size: 15px;
+}
+.table-responsive1 {
+  margin-top: 20px;
+}
+.text-direction-arabic {
+  direction: rtl !important;
+}
+.decision-tree {
+  padding-bottom: 60px;
+}
+.text-direction-english {
+  direction: ltr !important;
+}
+svg.bi.bi-info-circle-fill {
+  position: absolute;
+  right: 0px;
+  top: -5px;
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.el-tooltip__popper.is-dark {
+  background: #303133;
+  color: #fff;
+}
+.el-tooltip__popper {
+  position: absolute;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 2000;
+  font-size: 12px;
+  line-height: 1.2;
+}
+svg:focus {
+  outline: none !important;
+}
+.card.player-box.card-outline.card-default.text-center {
+  margin-right: 230px;
+}
+.decision-tree-node-content {
+  right: -250px;
+}

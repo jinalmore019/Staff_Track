@@ -1,0 +1,10 @@
+.drawerIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}

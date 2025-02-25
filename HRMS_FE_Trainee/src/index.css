@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply border-border;
+}
+body {
+  @apply bg-background text-foreground;
+  --destructive: 0 62.8% 30.6%;
+  --border: 214.3 31.8% 91.4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+  --input: 259, 45%, 31%;
+}
+.quill-editor .ql-toolbar {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.
+.quill-editor .ql-container {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.ql-editor{
+  min-height: 200px;
+}
+.light {
+  /* --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+ 
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%; */
+
+  /* --destructive-foreground: 0 85.7% 97.3%; */
+  /* --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;  */
+}
+.switch-img span {
+  position: relative;
+  background-color: #2a90f0;
+}
+
+.switch-img span::after {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  background-image: url(../src/assets/coffee-cup.png);
+  background-position: center;
+  background-size: contain;
+  right: 0;
+  left: 0;
+  /* background-color: red; */
+}
+.dark-switch-img span::before {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  background-image: url(../src/assets/coffee-cup-black.png);
+  background-position: center;
+  background-size: contain;
+  right: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar{display:none};
+
+
+
+
+
+
+
+.data-\[state\=checked\]\:bg-primary[data-state="checked"] {
+  background-color: #f5ebeb !important;
+}
+.data-\[state\=unchecked\]\:bg-input[data-state="unchecked"] {
+  background-color: #f5ebeb !important;
+}
+.data-\[state\=unchecked\]\:translate-x-0[data-state="unchecked"] {
+  background-color: #fff !important;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+.fc-event-time {
+  display:none !important;
+} 

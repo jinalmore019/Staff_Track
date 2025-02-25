@@ -1,0 +1,27 @@
+/* Add this CSS to your global styles or in a CSS file */
+.scrollbar {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track); /* Color of the scrollbar thumb and track */
+    overflow-y: overlay; /* Always show scrollbar */
+}
+
+/* Styling for all browsers */
+.scrollbar::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: var(--scrollbar-track); /* Background color of the scrollbar track */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Border radius of the scrollbar thumb */
+    width: 2px; /* Width of the scrollbar thumb */
+}
+
+/* Define scrollbar colors using CSS custom properties */
+:root {
+    --scrollbar-thumb: #605080; ; /* Color of the scrollbar thumb */
+    --scrollbar-track: rgba(255, 255, 255, 0.5); /* Background color of the scrollbar track */
+}

@@ -1,0 +1,5 @@
+Input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    display:none;
+    
+ }

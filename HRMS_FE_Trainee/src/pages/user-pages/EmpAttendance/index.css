@@ -1,0 +1,7 @@
+.fc-daygrid-day-events  {
+   pointer-events: none;
+   margin-left: 3px;
+}
+.emp-atten  .fc-button-group{
+   visibility: hidden;
+}
