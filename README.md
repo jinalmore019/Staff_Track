@@ -1,47 +1,53 @@
 # 🚀 Staff Track
 
 ## 📌 Project Overview
-Staff Track is an employee time and attendance management system designed to streamline workforce tracking, payroll management, and project oversight. The system allows administrators to monitor work hours, manage teams, assign salaries, and ensure compliance with company policies. Employees can log their daily work hours, request leaves, and view salary details, among other functionalities.
+Staff Track is a modern employee management system designed to facilitate time tracking, payroll management, and project monitoring for businesses. It provides a seamless solution for administrators and employees to efficiently manage work schedules, attendance, and salaries. The system also includes comprehensive reporting features and analytics to optimize workforce productivity.
 
-## ✨ Features
-### 🔹 **Admin Panel**
-- 👨‍💼 Employee Management (Add, Update, Delete)
-- 👥 Team Management
-- ⏳ Attendance and Leave Tracking
-- 💰 Payroll Processing
-- 📊 Project and Task Monitoring
-- 📢 Notice and Announcement Management
-- 🔒 Secure Authentication System
-- 📈 Data Analytics and Reporting Dashboard
+### 🎯 **Project Goals**
+- Automate time and attendance tracking for employees.
+- Provide real-time salary calculation and payroll management.
+- Enhance project and team collaboration with structured workflows.
+- Improve decision-making through detailed analytics and reporting.
+- Ensure compliance with company policies and labor laws.
 
-### 🔹 **Employee Panel**
-- 👤 View and Update Profile
-- 🕒 Attendance Logging (Check-in / Check-out)
-- 🏖️ Leave Requests and Approval Tracking
-- 💵 Salary and Payroll Details
-- 📌 View Assigned Projects and Teams
-- 🔔 Notifications and Announcements
+## ✨ Features & Modules
+### 🔹 **Admin Panel Features**
+- 👨‍💼 **Employee Management**: Add, update, or remove employees.
+- 👥 **Team Management**: Create and manage project teams.
+- ⏳ **Attendance Tracking**: Monitor check-in/check-out times.
+- 🏖️ **Leave Management**: Approve or reject leave requests.
+- 💰 **Payroll Processing**: Calculate salaries, deductions, and bonuses.
+- 📊 **Project Monitoring**: Assign tasks and track project progress.
+- 📢 **Notices & Announcements**: Publish updates for employees.
+- 🔒 **Security & Authentication**: Secure user login with role-based access.
+- 📈 **Data Analytics**: Generate reports for HR and payroll insights.
+
+### 🔹 **Employee Panel Features**
+- 👤 **Profile Management**: View and update personal details.
+- 🕒 **Time Tracking**: Log daily working hours with check-in/check-out.
+- 🏖️ **Leave Requests**: Apply for leaves and track approval status.
+- 💵 **Salary Insights**: View payroll details and salary breakdowns.
+- 📌 **Project Dashboard**: Monitor assigned projects and deadlines.
+- 🔔 **Notifications & Announcements**: Stay updated with company alerts.
 
 ## 🛠️ Tech Stack
 ### 🎨 **Frontend**
-- ⚛️ React.js
-- 📱 Flutter Framework
-- 🎨 Tailwind CSS
-- 🖥️ Bootstrap
-- 📝 JavaScript & TypeScript
+- ⚛️ **React.js** - Interactive UI development.
+- 📱 **Flutter Framework** - Mobile app compatibility.
+- 🎨 **Tailwind CSS & Bootstrap** - Responsive styling.
+- 📝 **JavaScript & TypeScript** - Dynamic web interactions.
 
 ### 🔧 **Backend**
-- 🟢 Node.js
-- 🔄 Express.js
-- 🗄️ MongoDB
-- 🌐 REST APIs
+- 🟢 **Node.js** - Backend logic and API handling.
+- 🔄 **Express.js** - REST API implementation.
+- 🗄️ **MongoDB** - Database storage and management.
 
-### ⚙️ **Tools Used**
-- 🖥️ Visual Studio Code
-- 🔬 Postman (API Testing)
-- 🗃️ MongoDB Compass
-- 🎨 Figma (UI/UX Design)
-- 🔗 GitHub (Version Control)
+### ⚙️ **Development Tools**
+- 🖥️ **Visual Studio Code** - Code editing and development.
+- 🔬 **Postman** - API testing and debugging.
+- 🗃️ **MongoDB Compass** - Database management.
+- 🎨 **Figma** - UI/UX design.
+- 🔗 **GitHub** - Version control and collaboration.
 
 ## 💻 System Requirements
 ### **Development Environment**
@@ -89,7 +95,7 @@ Staff Track is an employee time and attendance management system designed to str
 7. Open the application in your browser at `http://localhost:3000`
 
 ## 🗃️ Database Schema Overview
-### 📊 **Key Tables in MongoDB**
+### 📊 **Key Collections in MongoDB**
 - 📋 `employees`: Stores employee details and work history.
 - 🕒 `attendance`: Records employee check-in and check-out times.
 - 📌 `projects`: Tracks ongoing company projects.
@@ -100,7 +106,7 @@ Staff Track is an employee time and attendance management system designed to str
 ## 🚀 Future Enhancements
 - 📱 Mobile app admin panel integration.
 - 🏢 Asset request and management system.
-- 🧠 Improved AI-powered attendance tracking.
+- 🧠 AI-powered attendance tracking and workforce optimization.
 
 ## 👥 Contributors
 - **Krishn Navadiya**  
