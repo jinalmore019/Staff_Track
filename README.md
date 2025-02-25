@@ -124,3 +124,10 @@ This project is open-source and available under the MIT License.
 ## 📬 Contact
 For queries or contributions, reach out via [GitHub Issues](https://github.com/your-repo-url/issues).
 
+🌟 Support the Project
+
+⭐ If you like this project, give it a star on GitHub! 🚀
+
+
+
+
