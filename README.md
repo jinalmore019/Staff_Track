@@ -108,15 +108,7 @@ Staff Track is a modern employee management system designed to facilitate time t
 - 🏢 Asset request and management system.
 - 🧠 AI-powered attendance tracking and workforce optimization.
 
-## 👥 Contributors
-- **Krishn Navadiya**  
-- **Smit Monpara**  
-- **Krinal Narola**  
-- **Vishwa Mangukiya**  
-- **Rajvi Kumbhani**  
-- **Princy Kachhadiya**  
 
-**👨‍🏫 Guided By:** Asst. Prof. Twinkle S. Panchal
 
 ## 📜 License
 This project is open-source and available under the MIT License.
