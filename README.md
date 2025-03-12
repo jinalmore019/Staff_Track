@@ -119,6 +119,13 @@ For queries or contributions, reach out via [GitHub Issues](https://github.com/y
 ## 🎥 Project Demo & Screenshots
 
 
+
+
+https://github.com/user-attachments/assets/e336abb1-0db9-4768-ae70-11c78cc4e7c6
+
+
+
+
 #ONBOARDING SCREEN
 
 ![onboarding](https://github.com/user-attachments/assets/318c995b-ed3f-4554-a52f-e2d6e112770c)
